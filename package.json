@@ -1,0 +1,37 @@
+{
+  "name": "portail-dad",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./src/app",
+    "dev": "node ./node_modules/nodemon/bin/nodemon.js ./src/app",
+    "start:prod": "export NODE_ENV=production&&node ./src/app",
+    "lint": "eslint --report-unused-disable-directives .",
+    "lint:fix": "eslint --fix ."
+  },
+  "author": "Fakher HANNAFI",
+  "dependencies": {
+    "app-root-path": "^2.2.1",
+    "body-parser": "^1.18.3",
+    "config": "^3.0.1",
+    "cors": "^2.8.5",
+    "cron": "^1.2.1",
+    "crypto": "^1.0.1",
+    "express": "^4.16.4",
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.5.0",
+    "mongodb": "^3.2.2",
+    "oracledb": "^3.1.2",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "web-push": "^3.3.5",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "nodemon": "^1.18.10"
+  }
+}
